@@ -1,14 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { TeamComponent } from './team/team.component';
+import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FooterComponent } from './footer/footer.component';
+import { EquipmentComponent } from './equipment/equipment.component';
+import { AboutComponent } from './about/about.component';
+import { PricingComponent } from './pricing/pricing.component';
+
+const routes:Routes =[
+//{path:"",component:HomeComponent}
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TeamComponent,
+    HomeComponent,
+    DashboardComponent,
+    FooterComponent,
+    EquipmentComponent,
+    AboutComponent,
+    PricingComponent,
+  
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
