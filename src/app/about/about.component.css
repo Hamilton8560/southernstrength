@@ -1,0 +1,27 @@
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items vertically in each column */
+    margin: 16px; /* Adjust margin as needed */
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust for medium screens */
+    .flex-col {
+      width: 50%; /* 2 columns */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust for small screens */
+    .flex-col {
+      width: 100%; /* 1 column */
+    }
+  }
+  

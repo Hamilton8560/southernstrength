@@ -1,0 +1,20 @@
+div {
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+.firstPrice, .yearlyPrice {
+    color: black;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+#monthlyCard {
+    background-color: #2C3140;
+}
+
+#secondPrice {
+    color: #DBDBDB;
+    font-size: 70px;
+    font-weight: bolder;
+}
