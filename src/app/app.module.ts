@@ -11,7 +11,10 @@ import { AboutComponent } from './about/about.component';
 import { PricingComponent } from './pricing/pricing.component';
 
 const routes:Routes =[
-//{path:"",component:HomeComponent}
+{path:"",component:HomeComponent},
+{path:"equipment", component:EquipmentComponent},
+{path:"membership", component:PricingComponent},
+{path:'about',component:AboutComponent}
 ]
 
 @NgModule({
@@ -28,7 +31,7 @@ const routes:Routes =[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })
   ],
   providers: [],
   bootstrap: [AppComponent]
