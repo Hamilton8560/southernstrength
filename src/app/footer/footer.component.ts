@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+
+  onInstagram(){
+    const url = 'https://www.instagram.com/southernstrengthfl/';
+    window.open(url, '_blank');
+  }
 }
