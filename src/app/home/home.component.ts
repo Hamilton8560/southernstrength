@@ -9,7 +9,10 @@ import { Router } from '@angular/router';
 export class HomeComponent {
  constructor(private router:Router){}
 onEquipment(){
-  this.router.navigate(['equipment'])
+  this.router.navigate(['equipment']).then(() => {
+    window.scrollTo(0,0);
+  })
+  }
+  
 }
 
-}
